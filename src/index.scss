@@ -1,10 +1,17 @@
+
+@import '../src/components/styleVariables/scssVariables.scss';
+
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
 }
 
 body{
   font-size: 62.5%;
+  height: 100vh;
+  background-color:$page-bg-color;
 }
 
