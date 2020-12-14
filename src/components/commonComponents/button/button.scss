@@ -1,23 +1,23 @@
-@import '../../styleVariables/scssVariables.scss';
+@import "../../styleVariables/scssVariables.scss";
 
-
-@mixin button($color,$width,$height) {
+@mixin button($color, $width, $height) {
     width: $width;
     height: $height;
     background: $color;
-    padding-top: .2rem;
+    padding-top: 0.2rem;
     box-shadow: 2px 10px 20px rgba(0, 0, 0, 0.3);
     border: 0;
-    border-radius: .5rem;
+    border-radius: 0.5rem;
     font-size: 2rem;
     text-align: center;
-    color: $txt-color-white;  
-    transition: all .2s; 
-    &:hover{
+    color: $txt-color-white;
+    transition: all 0.2s;
+    outline: none;
+    &:hover {
         transform: scale(1.03);
     }
-    &:active{
-        transform: scale(1) translateY(.5rem);
+    &:active {
+        transform: scale(1) translateY(0.5rem);
         box-shadow: 2px 3px 20px rgba(0, 0, 0, 0.3);
     }
 }

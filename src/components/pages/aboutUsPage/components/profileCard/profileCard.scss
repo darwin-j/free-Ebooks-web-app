@@ -1,0 +1,27 @@
+@import '../../../../styleVariables/scssVariables.scss';
+
+.profileCard{
+    width: 25rem;
+    height: 35rem;
+  
+    margin-top: 3%;
+    background-color:$profile-card-color;
+    border-radius: 1rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: $txt-color-dark;
+    
+    &-img{
+     align-self: start;
+    }
+
+    &-heading{
+     font-size: 3rem
+    }
+
+    &-para{
+      font-size: 2rem;
+    }
+}

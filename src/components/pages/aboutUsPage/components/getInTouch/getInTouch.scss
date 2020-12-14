@@ -1,0 +1,42 @@
+@import "../../../../commonComponents/button/button.scss";
+
+.getInTouch {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 1rem;
+    &-heading {
+        font-size: 3rem;
+        color: #e88161;
+        align-self: center;
+    }
+
+    &-input {
+        width: 25rem;
+        height: 3.5rem;
+        font-size: 1.5rem;
+        padding-left: 1rem;
+        color: $txt-color-grey-dark-1;
+        border: #e88161 solid 0.1rem;
+        border-radius: 0.2rem;
+        &::placeholder {
+            color: #9a9292;
+            font-size: 1.5rem;
+        }
+
+        &:focus {
+            outline-color: $btn-color-1;
+        }
+
+        &:nth-child(4) {
+            resize: none;
+            height: 11rem;
+            padding-top: 0.5rem;
+        }
+    }
+
+    &-button {
+        align-self: center;
+        @include button($color: $btn-color-2, $width: 11rem, $height: 4rem);
+    }
+}
