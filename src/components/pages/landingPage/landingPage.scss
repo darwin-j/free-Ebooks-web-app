@@ -1,0 +1,38 @@
+@import '../../styleVariables/scssVariables.scss';
+@import '../../commonComponents/button/button.scss';
+
+.landingPage{
+display: flex;
+
+    &-left{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+&-head{
+    font-size: 3rem;
+    color:$txt-color-grey-dark-1;
+    &-EBooks{
+       color: $btn-color-1;
+    }
+}
+&-para{
+font-size: 2rem;
+color:$txt-color-grey;
+line-height: 3.5rem;
+}
+
+&-button{
+    @include button($color:$btn-color-1,$width:12rem,$height:3rem);
+    
+}
+    }
+
+    &-right{
+        display: flex;
+&-img{
+    width: 40rem;
+    height: 40rem;
+    margin-left: 8rem;
+}
+    }
+}
