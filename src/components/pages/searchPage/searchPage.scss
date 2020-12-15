@@ -1,0 +1,62 @@
+@import "../../commonComponents/button/button.scss";
+.searchPage {
+    &-bar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &-input {
+            width: 30rem;
+            height: 3.3rem;
+            padding-left: 0.5rem;
+            margin-right: 1rem;
+            font-size: 1.5rem;
+            border: 0;
+            color: $txt-color-grey-dark-2;
+            background-color: #ffbea3;
+            border-radius: 0.3rem;
+            box-shadow: 2px 10px 20px rgba(0, 0, 0, 0.3);
+            &:focus {
+                outline: none;
+            }
+        }
+        &-button {
+            @include button($color: #ffbea3, $width: 3.3rem, $height: 3.3rem) &-img {
+            }
+        }
+    }
+
+    &-allBooks {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 2rem;
+        justify-content: center;
+        align-items: flex-start;
+        &-books {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            margin: 0 4rem;
+            width: 10rem;
+            align-items: flex-start;
+
+            &-img {
+                margin-top: 2rem;
+                box-shadow: 2px 10px 20px rgba(0, 0, 0, 0.2);
+                border-radius: 0.2rem;
+                height: 14rem;
+                width: 10rem;
+            }
+            &-title {
+                width: 10rem;
+                font-size: 1rem;
+                margin-top: 1rem;
+                font-weight: bold;
+            }
+            &-authors {
+                margin-top: 0.8rem;
+                font-size: 0.8rem;
+            }
+        }
+    }
+}
