@@ -1,5 +1,10 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+  Redirect,
+} from "react-router-dom";
 import "./App.scss";
 import Header from "./components/commonComponents/header/Header";
 import LandingPage from "./components/pages/landingPage/LandingPage";
@@ -12,7 +17,8 @@ export default function App() {
       <Router>
         <Header />
         <Switch>
-          <Route path="/" exact component={LandingPage} />
+          <Route path="/" exact render={() => <Redirect to="/landing" />} />
+          <Route path="/landing" component={LandingPage} />
           <Route path="/search" component={SearchPage} />
           <Route path="/product/:id" component={ProductPage} />
           <Route path="/about" component={AboutUsPage} />
