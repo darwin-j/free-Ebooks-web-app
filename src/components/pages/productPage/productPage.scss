@@ -1,0 +1,40 @@
+@import "../../commonComponents/button/button.scss";
+
+.productPage-eBook- {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+
+    &left- {
+        &img {
+            width: 20rem;
+            height: 28rem;
+            border-radius: 0.3rem;
+            box-shadow: 0.1rem 0.5rem 2rem rgba($color: #000000, $alpha: 0.2);
+        }
+    }
+
+    &right- {
+        margin-left: 3rem;
+        &title {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: $txt-color-grey-dark-2;
+        }
+        &authors {
+            margin-top: 2rem;
+            font-size: 1.5rem;
+            margin-bottom: 3rem;
+            color: $txt-color-grey-dark-1;
+        }
+        &downloadLink {
+            text-decoration: none;
+
+            @include button($color: $btn-color-2, $width: 12rem, $height: 3rem);
+            padding: 0.6rem;
+            &:link {
+                color: white;
+            }
+        }
+    }
+}

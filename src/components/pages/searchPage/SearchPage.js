@@ -1,17 +1,19 @@
 import React, { useState, useEffect } from "react";
 import "./searchPage.scss";
 import searchIcon from "../../../images/search-icon.svg";
-
+import { Link } from "react-router-dom";
 export default function SearchPage() {
   const [eBooks, setEBooks] = useState([]);
   const [searchValue, setSearchValue] = useState();
   const [search, setSearch] = useState("flowers");
+
   useEffect(() => {
     fetch(
       `https://www.googleapis.com/books/v1/volumes?q=${search}&filter=free-ebooks`
     )
       .then((response) => response.json())
-      .then((data) => setEBooks(data.items));
+      .then((data) => setEBooks(data.items))
+      .catch((err) => console.log(err));
   }, [search]);
   return (
     <div className="searchPage">
@@ -35,19 +37,21 @@ export default function SearchPage() {
       </div>
       <div className="searchPage-allBooks">
         {eBooks.map((eBook) => (
-          <div className="searchPage-allBooks-books">
-            <img
-              className="searchPage-allBooks-books-img"
-              src={eBook.volumeInfo.imageLinks.smallThumbnail}
-              alt="books"
-            />
-            <p className="searchPage-allBooks-books-title">
-              {eBook.volumeInfo.title.substring(0, 30)}
-            </p>
-            <p className="searchPage-allBooks-books-authors">
-              {eBook.volumeInfo.authors}
-            </p>
-          </div>
+          <Link to={`/product/${eBook.id}`}>
+            <div className="searchPage-allBooks-books">
+              <img
+                className="searchPage-allBooks-books-img"
+                src={eBook.volumeInfo.imageLinks.smallThumbnail}
+                alt="books"
+              />
+              <p className="searchPage-allBooks-books-title">
+                {eBook.volumeInfo.title.substring(0, 30)}
+              </p>
+              <p className="searchPage-allBooks-books-authors">
+                {eBook.volumeInfo.authors}
+              </p>
+            </div>
+          </Link>
         ))}
       </div>
     </div>

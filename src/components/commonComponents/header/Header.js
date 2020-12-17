@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./header.scss";
 import searchIcon from "../../../images/search-icon.svg";
 export default function Header() {
@@ -6,13 +7,23 @@ export default function Header() {
     <>
       <div className="header">
         <div className="header-left">
-          <p className="header-logo-txt">
-            <span className="header-logo-txt-go">Go</span>Books
-          </p>
+          <Link to="/">
+            <p className="header-logo-txt">
+              <span className="header-logo-txt-go">Go</span>Books
+            </p>
+          </Link>
         </div>
         <div className="header-right">
-          <p className="header-link">About us</p>
-          <img className="header-searchIcon" src={searchIcon} />
+          <Link to="/about">
+            <p className="header-link">About us</p>
+          </Link>
+          <Link to="/search">
+            <img
+              className="header-searchIcon"
+              alt="searchIcon"
+              src={searchIcon}
+            />
+          </Link>
         </div>
       </div>
     </>

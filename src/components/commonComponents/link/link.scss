@@ -1,0 +1,14 @@
+@mixin link {
+    text-decoration: none;
+    &:visited {
+        color: inherit;
+    }
+
+    &:active {
+        color: black;
+    }
+
+    &:link {
+        color: black;
+    }
+}

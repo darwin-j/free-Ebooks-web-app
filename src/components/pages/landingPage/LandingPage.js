@@ -1,5 +1,6 @@
 import React from "react";
 import "./landingPage.scss";
+import { Link } from "react-router-dom";
 
 import girlOnBooks from "../../../images/girl-on-books.svg";
 export default function LandingPage() {
@@ -14,7 +15,9 @@ export default function LandingPage() {
             Download Free EBooks in PDF format. No annoying ads, no download
             limits, enjoy it and don't forget to bookmark and share the love!
           </p>
-          <p className="landingPage-left-button">Get Books</p>
+          <Link to="/search">
+            <p className="landingPage-left-button">Get Books</p>
+          </Link>
         </div>
         <div className="landingPage-right">
           <img className="landingPage-right-img" src={girlOnBooks} />

@@ -1,51 +1,47 @@
 @import "../../styleVariables/scssVariables.scss";
 
-.header{
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+
+  &-right {
     display: flex;
-   
-    justify-content: space-between;
-    align-items:baseline;
+    align-items: baseline;
+  }
 
-    &-right{
-        display: flex;
-        align-items: baseline;
+  &-logo-txt {
+    font-size: 2rem;
+    &-go {
+      color: $btn-color-1;
     }
+  }
 
+  &-link {
+    font-size: 1.5rem;
+    transition: all 0.2s;
+    &:hover {
+      transform: scale(1.1);
+    }
+    &:active {
+      transform: scale(1);
+    }
+  }
 
-&-logo-txt{
-   font-size: 2rem;
-&-go{
-color: $btn-color-1;
-}
-}
+  &-searchIcon {
+    margin-left: 2rem;
+    align-self: end;
+    transition: all 0.2s;
 
-&-link{
-font-size: 1.5rem;
-transition: all 0.2s;
-&:hover{
-    transform: scale(1.1);
-}
-&:active{
-  transform: scale(1);
-}
-
-}
-
-&-searchIcon{
-  margin-left: 2rem;
-  align-self:end;
-  transition: all 0.2s;
-
-  &:hover{
+    &:hover {
       transform: scale(1.2);
-  }
- &:active{
-    transform: scale(1);
+    }
+    &:active {
+      transform: scale(1);
+    }
   }
 }
-
-}
-// 
+//
 // <div className="header">
 // <p className="logo-txt">
 //   <span className="txt-go">Go</

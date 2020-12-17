@@ -1,4 +1,9 @@
-.App{
+@import "./components/commonComponents/link/link.scss";
+
+a {
+    @include link;
+}
+
+.App {
     margin: 1rem 4rem;
-    
 }
