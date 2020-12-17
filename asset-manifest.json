@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/free-Ebooks-web-app/static/css/main.b0216fa8.chunk.css",
+    "main.js": "/free-Ebooks-web-app/static/js/main.cec0527e.chunk.js",
+    "main.js.map": "/free-Ebooks-web-app/static/js/main.cec0527e.chunk.js.map",
+    "runtime-main.js": "/free-Ebooks-web-app/static/js/runtime-main.ff1c225e.js",
+    "runtime-main.js.map": "/free-Ebooks-web-app/static/js/runtime-main.ff1c225e.js.map",
+    "static/js/2.76757e12.chunk.js": "/free-Ebooks-web-app/static/js/2.76757e12.chunk.js",
+    "static/js/2.76757e12.chunk.js.map": "/free-Ebooks-web-app/static/js/2.76757e12.chunk.js.map",
+    "static/js/3.533ef39a.chunk.js": "/free-Ebooks-web-app/static/js/3.533ef39a.chunk.js",
+    "static/js/3.533ef39a.chunk.js.map": "/free-Ebooks-web-app/static/js/3.533ef39a.chunk.js.map",
+    "index.html": "/free-Ebooks-web-app/index.html",
+    "static/css/main.b0216fa8.chunk.css.map": "/free-Ebooks-web-app/static/css/main.b0216fa8.chunk.css.map",
+    "static/js/2.76757e12.chunk.js.LICENSE.txt": "/free-Ebooks-web-app/static/js/2.76757e12.chunk.js.LICENSE.txt",
+    "static/media/girl-on-books.f462b0e5.svg": "/free-Ebooks-web-app/static/media/girl-on-books.f462b0e5.svg",
+    "static/media/male-profile.2fc51933.svg": "/free-Ebooks-web-app/static/media/male-profile.2fc51933.svg",
+    "static/media/search-icon.e81f296d.svg": "/free-Ebooks-web-app/static/media/search-icon.e81f296d.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ff1c225e.js",
+    "static/js/2.76757e12.chunk.js",
+    "static/css/main.b0216fa8.chunk.css",
+    "static/js/main.cec0527e.chunk.js"
+  ]
+}
