@@ -17,8 +17,8 @@ export default function App() {
       <Router>
         <Header />
         <Switch>
-          <Route path="/" exact render={() => <Redirect to="/landing" />} />
-          <Route path="/landing" component={LandingPage} />
+          <Route exact path="/" component={LandingPage} />
+          <Route exact path="/free-Ebooks-web-app" component={LandingPage} />
           <Route path="/search" component={SearchPage} />
           <Route path="/product/:id" component={ProductPage} />
           <Route path="/about" component={AboutUsPage} />
